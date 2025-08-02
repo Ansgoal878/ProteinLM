@@ -4,18 +4,18 @@
 ProteinLM is a simplified toolkit for protein sequence embedding generation and visualization using pre-trained language models (PLMs) from Hugging Face. This package allows researchers to easily load different protein language models, generate embeddings from protein sequences, and visualize them using dimensionality reduction techniques such as UMAP and PCA.
 
 ## Directory Structure
-ProteinLM/
-├── README.md                     # Usage documentation
-├── requirements.txt              # Dependencies list
-├── src/                          # Core code
-│   ├── __init__.py
-│   ├── model_loader.py           # Model loading functionality
-│   ├── embedding_generator.py    # Generate embeddings from sequences
-│   └── visualizer.py             # Visualization tools (UMAP, PCA)
-├── data/                         # Example data
-├── examples/                     # Example scripts
-│   └── basic_usage.py            # Basic usage example
-└── submit_example.sh             # Server execution script
+ProteinLM/<br>
+├── README.md                     # Usage documentation<br>
+├── requirements.txt              # Dependencies list<br>
+├── src/                          # Core code<br>
+│   ├── __init__.py<br>
+│   ├── model_loader.py           # Model loading functionality<br>
+│   ├── embedding_generator.py    # Generate embeddings from sequences<br>
+│   └── visualizer.py             # Visualization tools (UMAP, PCA)<br>
+├── data/                         # Example data<br>
+├── examples/                     # Example scripts<br>
+│   └── basic_usage.py            # Basic usage example<br>
+└── submit_example.sh             # Server execution script<br>
 
 ## Installation
 ### Copy Files to Your Working Directory
@@ -25,8 +25,8 @@ cp -r /path/to/ProteinLM /your/working/directory/
 ```
 
 ## Usage
-1. Select a Model and Configure Input (Optional)
-Edit the examples/basic_usage.py file to select your preferred model and configure your input sequences:
+1. Select a Model and Configure Input (Optional)<br>
+Edit the examples/basic_usage.py file to select your preferred model and configure your input sequences:<br>
 ```py
 # Change the model to any of the supported models
 tokenizer, model = load_model("facebook/esm2_t12_35M_UR50D")
@@ -56,9 +56,9 @@ squeue -u your_user_id
 ```
 
 ## Generated Files
-After successful execution, the following files will be generated:
-    1. Visualization files (PCA and UMAP plots in PNG format)
-    2. Log file: plm_example_{JOBID}.log containing execution details
+After successful execution, the following files will be generated:<br>
+    1. Visualization files (PCA and UMAP plots in PNG format)<br>
+    2. Log file: plm_example_{JOBID}.log containing execution details<br>
 
 ## Available Models
 The following protein language models are supported:
@@ -77,6 +77,7 @@ The following protein language models are supported:
 * "ElnaggarLab/ankh-large"
 
 ## Troubleshooting
+Please review the issues and relevant log files below, or contact the author for assistance.
 ###　Path Configuration Issues
 * Ensure all paths in the submission script are correctly set to reflect your environment.
 * Make sure the Singularity image path is correct.
@@ -101,6 +102,6 @@ The following protein language models are supported:
 
 ## Contact Information
 ### Li-Zhong Guo
-Email: glizhong89@gmail.com
-@HHCLAB
-For any issues or inquiries, please contact the author or create an issue in the repository.
+Email: glizhong89@gmail.com<br>
+@HHCLAB<br>
+For any issues or inquiries, please contact the author or create an issue in the repository.<br>
